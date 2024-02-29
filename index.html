@@ -49,7 +49,7 @@ button{
     display:block;
     margin:0 auto ;
   }
-  div{
+  #div{
     display: none;
   }
   
@@ -62,8 +62,9 @@ button{
 <h2>جروب تعارف +18</h2>
 
 <p>للتأكد من أنك لست تحت السن القانوني يجب ان ترد على بعض الاسئلة</p>
-
-<div id="dv" data-captcha-enable="true"></div>
+<div id="div">
+<div  data-captcha-enable="true"></div>
+</div>
 <button type="submit" onclick="go();"> الانضمام الى الدردشة</button>
 
 
@@ -71,7 +72,7 @@ button{
 
   
   function go(){
-   var dv = document.getElementById('dv');
+   var dv = document.getElementById('div');
     
     dv.style.display="block";
     
